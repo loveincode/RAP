@@ -4122,6 +4122,10 @@ function deepCopy(o) {
                     return "put";
                 case 4:
                     return "delete";
+                case 5:
+                    return "patch";
+                case 6:
+                    return "head";
                 default: return "unknown";
             }
         }

@@ -245,6 +245,10 @@
                     <label for="editAFloater-type-3">PUT</label>
                     <input type="radio" id="editAFloater-type-4" name="editAFloater-type" value="4"/>
                     <label for="editAFloater-type-4">DELETE</label>
+                    <input type="radio" id="editAFloater-type-5" name="editAFloater-type" value="5"/>
+                    <label for="editAFloater-type-5">PATCH</label>
+                    <input type="radio" id="editAFloater-type-6" name="editAFloater-type" value="6"/>
+                    <label for="editAFloater-type-6">HEAD</label>
                 </td>
             </tr>
             <tr>
