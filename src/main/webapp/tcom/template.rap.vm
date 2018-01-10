@@ -89,7 +89,7 @@
 
                     <li style="display:none;"><a href="$platformUrl.doc" target="_blank">文档</a></li>
                     <li style="display:none;"><a href="$platformUrl.test">测试</a></li>
-                    <li><a href="$platformUrl.log">数据</a></li>
+                    <li style="display:none;"><a href="$platformUrl.log">数据</a></li>
                     <li><a href="https://github.com/thx/RAP/wiki/user_manual_cn#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE" target="_blank">教程
                         <!-- <span style="color:yellow;"> (new)</span> -->
                     </a></li>
