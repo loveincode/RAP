@@ -3925,7 +3925,7 @@ function deepCopy(o) {
                 for (var j = 0; j < actionListNum; j++) {
                     var action = actionList[j];
                     str += "<div id=\"div-a-tree-node-" + action.id + "\">" + "<a href=\"#\" onclick=\"ws.switchA(" + action.id +
-                        "); return false;\" ondblclick=\"ws.editA(" + action.id + "); return false;\">" + util.escaper.escapeInH(action.name) + "</a>";
+                        "); return false;\" ondblclick=\"ws.editA(" + action.id + "); return false;\">" + util.escaper.escapeInH(action.name) +" <font color='green'>"+ getRequestTypeStr(action.requestType)+"</font></a>";
                     if (_isEditMode) {
                         str += "<a href=\"#\" class=\"edit-link\" onclick=\"ws.editA(" +
                             action.id + "); return false;\"><i class=\"glyphicon glyphicon-pencil\"></i><a href=\"#\" onclick=\"ws.removeA(" +
@@ -4115,17 +4115,17 @@ function deepCopy(o) {
             requestType = requestType - 0;
             switch (requestType) {
                 case 1:
-                    return "get";
+                    return "GET";
                 case 2:
-                    return "post";
+                    return "POST";
                 case 3:
-                    return "put";
+                    return "PUT";
                 case 4:
-                    return "delete";
+                    return "DELETE";
                 case 5:
-                    return "patch";
+                    return "PATCH";
                 case 6:
-                    return "head";
+                    return "HEAD";
                 default: return "unknown";
             }
         }
